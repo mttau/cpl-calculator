@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-header h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #002855;
+}
+
+.calculator-header p {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.result-group {
+    margin: 20px 0;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.result-item span {
+    font-weight: bold;
+    color: #333;
+}
+
+.final-result {
+    background-color: #002855;
+    color: white !important;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.final-result span {
+    color: white !important; /* Force the text color to be white */
+}
+
+.hint {
+    font-size: 12px;
+    color: #888;
+}
+
+.save-button {
+    background-color: #002855;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.save-button:hover {
+    background-color: #004080;
+}
