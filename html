@@ -1,0 +1,61 @@
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>Cost Per Lead Calculator</h1>
+            <p>Use the Cost Per Lead Calculator to help you identify the ideal Cost Per Lead for your product. You can use this Target Cost Per Lead output as a guide to make sustainable bidding decisions.</p>
+        </div>
+        <form id="cpl-form">
+            <div class="form-group">
+                <label for="billing-frequency">Billing Frequency</label>
+                <select id="billing-frequency" required>
+                    <option value="">Select Billing Frequency</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="revenue-per-customer">Revenue Per Customer Amount ($)</label>
+                <input type="number" id="revenue-per-customer" placeholder="$" required>
+            </div>
+            <div class="form-group">
+                <label for="average-months">Average number of months a customer stays with you</label>
+                <input type="number" id="average-months" required>
+            </div>
+            <div class="result-group">
+                <div class="result-item">
+                    <label>Customer Lifetime Revenue:</label>
+                    <span id="customer-lifetime-revenue">$0.00</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="marketing-percentage">What percentage of revenue are you willing to spend on a marketing channel to acquire a new customer?</label>
+                <input type="number" id="marketing-percentage" placeholder="%" required>
+                <p class="hint">15-30% is average for growing companies.</p>
+            </div>
+            <div class="result-group">
+                <div class="result-item">
+                    <label>Target Customer Acquisition Cost:</label>
+                    <span id="target-acquisition-cost">$0.00</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="qualification-rate">What percentage of total web leads are qualified for sales (qualification rate)?</label>
+                <input type="number" id="qualification-rate" placeholder="%" required>
+            </div>
+            <div class="form-group">
+                <label for="close-rate">What percentage of qualified leads become customers (close rate)?</label>
+                <input type="number" id="close-rate" placeholder="%" required>
+            </div>
+            <div class="result-group">
+                <div class="result-item final-result">
+                    <label>Target Cost Per Lead (CPL):</label>
+                    <span id="target-cpl">$0.00</span>
+                </div>
+            </div>
+            <button type="submit" class="save-button">Save</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
